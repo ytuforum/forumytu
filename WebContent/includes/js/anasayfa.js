@@ -1,18 +1,6 @@
+function anasayfaCtrl($scope){
+	$scope.name="Deneme";	
+}
 
-$(function(){
-
-	$('#kayitForm').on('click',function() {
-
-		$.ajax({
-			url:'/user/signup',
-			data:$('#kayitForm').serialize(),
-			dataType:'json',
-			success:function(){
-				console.log('verigeldi');
-			}
-
-		});
-
-	});
-
-});
+anasayfaCtrl.$inject = ['$scope'];
+indexApp.controller("anasayfaCtrl",anasayfaCtrl);

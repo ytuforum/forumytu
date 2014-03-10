@@ -4,10 +4,13 @@ import java.sql.*;
 
 public class DatabaseModel {
 	
+	public DatabaseModel(){
+		makeConnection();
+	}
 	public static Connection connect = null;
 	
-	protected static void connect(){
-		String url = "jdbc:///localhost:3306/forumytu";
+	public static void makeConnection(){
+		String url = "jdbc:mysql://localhost:3306/forumytu";
 		String username = "root";
 		String password = "";
 		
@@ -16,7 +19,7 @@ public class DatabaseModel {
 			connect = DriverManager.getConnection(url,username,password);			
 		}catch(Exception e)
 		{
-			//
+			System.out.print(e.getMessage());
 		}
 		
 	}
