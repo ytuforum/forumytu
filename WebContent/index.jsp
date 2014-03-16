@@ -5,8 +5,7 @@
         <jsp:include page="includes/menu.jsp"></jsp:include>
         <div class="container">
             <div class="row">
-        		<div ng-include="data.html"></div>
-        		 {{script}}
+        		<div ng-view></div>
             </div>
         </div>
 <jsp:include page="includes/footer.jsp"></jsp:include>

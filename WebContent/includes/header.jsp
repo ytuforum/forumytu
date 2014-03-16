@@ -13,10 +13,12 @@
         <link rel="stylesheet" type="text/css" href="includes/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="includes/css/signin.css">
         <link rel="stylesheet" type="text/css" href="includes/css/offcanvas.css">   
-        <script type="text/javascript" src="includes/js/angular.min.js"></script>
-        <script type="text/javascript" src="includes/js/router.js"></script>
-        <script type="text/javascript" src="includes/js/bootstrap.js"></script>
-		<script type="text/javascript" src="includes/js/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="includes/lib/angular.min.js"></script>
+		<script type="text/javascript" src="includes/lib/angular-route.min.js"></script>
+        <script type="text/javascript" src="includes/js/app.js"></script>
+        <script type="text/javascript" src="includes/js/controllers.js"></script>
+        <script type="text/javascript" src="includes/lib/bootstrap.js"></script>
+		<script type="text/javascript" src="includes/lib/jquery-1.10.2.js"></script>
     </head>
-    <body ng-controller="indexCtrl">
+    <body>
     
